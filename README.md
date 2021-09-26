@@ -1,2 +1,2 @@
 # me
-Web page about me and my carrer
+Web page about me and my professinal carrer
