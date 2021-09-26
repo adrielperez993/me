@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <title>Adriel Pérez: Software Engineer</title>
+    <style>
+        .cursor-animation {
+            animation: cursor 2s infinite 400ms;
+        }
+
+        @-webkit-keyframes cursor {
+            from {opacity: 1;}
+            50% {opacity: 1;}
+            51% {opacity: 0;}
+            to {opacity: 0;}
+        } 
+
+        @keyframes cursor {
+            from {opacity: 1;}
+            50% {opacity: 1;}
+            51% {opacity: 0;}
+            to {opacity: 0;}
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-800">
+    <nav class="flex items-center justify-between flex-wrap bg-indigo-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="">
+                <span class="font-mono font-bold text-xl">Adriel Pérez</span>
+            </a>
+        </div>
+        <div class="block sm:hidden">
+            <button id="menuBtn" class="flex items-center px-3 py-2 border rounded text-indigo-200 border-indigo-400 hover:text-white hover:border-white">
+                <span id="openMenu"><i class="fas fa-bars"></i></span>
+                <span id="closeMenu" class="hidden"><i class="fas fa-times"></i></span>
+            </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow sm:flex sm:items-center sm:w-auto hidden">
+            <div class="text-sm sm:flex-grow sm:flex sm:justify-end">
+                <a id="aboutLnk" href="#about" class="block mt-4 sm:inline-block sm:mt-0 text-indigo-200 hover:text-white uppercase mr-4">
+                    SOBRE MÍ
+                </a>
+                <a id="experienceLnk" href="#experience" class="block mt-4 sm:inline-block sm:mt-0 text-indigo-200 hover:text-white uppercase mr-4">
+                    EXPERIENCIA
+                </a>
+                <a id="educationLnk" href="#education" class="block mt-4 sm:inline-block sm:mt-0 text-indigo-200 hover:text-white uppercase mr-8">
+                    EDUCACIÓN
+                </a>
+                <div class="block mt-4 sm:inline-block sm:mt-0 text-pink-300 mr-12">
+                    <span class="font-bold text-white">{ </span class="text-green-600">"lang": <button id="langBtn"><span id="langSpan" class="font-bold text-pink-300 hover:text-pink-700">"ES"</span></button><span class="font-bold text-white"> }</span>
+                </div>
+            </div>
+            <div>
+                <a id="myResumeLnk" href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-indigo-500 hover:bg-white mt-4 sm:mt-0">
+                    Descarga mi CV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container flex-grow py-16 px-4 mx-auto mb-auto">
+
+        <div class="flex flex-wrap items-center mt-24 mb-16">
+            <div class="w-full lg:w-1/2 lg:ml-auto">
+                <img class="mx-auto" src="./logo.svg" width="300px"></img>
+            </div>
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:mr-auto">
+                <div id="hiDiv" class="font-mono text-white text-4xl text-center lg:text-left">Hola! Soy 
+                    <span class="bg-black rounded-lg py-2 px-8 text-white">Adriel<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>
+                </div>
+                <div id="ingDiv" class="mt-2 font-mono text-white text-4xl text-center lg:text-left">soy 
+                    <span id="ingSpan" class="bg-black rounded-lg py-2 px-8 text-white">ingeniero en sistemas<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>
+                </div>
+                <div id="loveToDiv" class="mt-2 font-mono text-white text-4xl text-center lg:text-left">y me encanta 
+                    <span id="codeSpan" class="bg-black rounded-lg py-2 px-8 text-white">codear<span class="text-indigo-500 text-6lg">;</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="py-16">
+            <h3 id="aboutTitle" class="text-gray-400 uppercase ml-2">SOBRE MÍ</h3>
+            <div class="bg-indigo-600 w-16 h-2 -mt-2"></div>
+
+            <div class="flex flex-wrap items-center mt-24">
+                <div class="w-full sm:w-1/2 sm:ml-auto">
+                    <img class="m-auto rounded-full h-48 w-48 sm:h-64 sm:w-64" src="adriel-photo.jfif">
+                </div>
+                <div id="aboutMeDiv" class="w-full sm:w-1/2 mt-8 sm:mt-0 sm:mr-auto text-white text-lg">
+                    Ingeniero en sistemas con más de cuatro años de experiencia. Excelentes habilidades de resolución de problemas con especial atención a los detalles, mejorar la satisfacción del cliente e impulsar mejoras operativas generales. Comprometido con formar parte de equipos de alto rendimiento para crear sistemas intuitivos, escalables y seguros enfocado en las buenas prácticas y apuntando al crecimiento personal reflejándolo en el crecimiento empresarial.
+                </div>
+            </div>
+        </div>
+        
+        <div id="experience" class="py-16">
+            <h3 id="experienceTitle" class="text-gray-400 uppercase ml-2">EXPERIENCIA</h3>
+            <div class="bg-indigo-600 w-16 h-2 -mt-2 mb-12"></div>
+
+            <div class="flex flex-wrap items-start mt-24">
+                <div class="w-full sm:w-1/3 xl:w-1/4">
+                    <div id="jobSite2" class="pl-4 font-bold text-white text-xl mb-1">ManpowerGroup Spain</div>
+                    <div id="jobPosition2" class="pl-4 text-gray-400 text-lg mb-1">Desarrollador .NET Full Stack</div>
+                    <div id="jobLocation2" class="pl-4 italic text-gray-600 text-base">Barcelona, España</div>
+                    <div id="jobPeriod2" class="pl-4 text-gray-600 text-sm">Sep 2020 - presente</div>
+                </div>
+                <div class="w-full sm:w-2/3 xl:w-3/4 mt-8 sm:mt-0 pl-8 text-white text-base">
+                    <ul class="list-disc">
+                        <li id="job2Desc1">Desarrollador Full stack .NET C# para muchos proyectos de Manpower, incluyendo aplicaciones web (portal cliente y apps internas) y REST APIs.</li>
+                        <li id="job2Desc2">Desarrollo y arquitectura de algunas API REST con conexión internacional (en .NET Core) que actualmente son consumidas por clientes fuera de España.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 flex flex-wrap items-start">
+                <div class="w-full sm:w-1/3 xl:w-1/4">
+                    <div id="jobSite1" class="pl-4 font-bold text-white text-xl mb-1">Juan Toselli Intl Tours</div>
+                    <div id="jobPosition1" class="pl-4 text-gray-400 text-lg mb-1">Desarrollador .NET</div>
+                    <div id="jobLocation1" class="pl-4 italic text-gray-600 text-base">Córdoba, Argentina</div>
+                    <div id="jobPeriod1" class="pl-4 text-gray-600 text-sm">May 2017 - Ene 2020</div>
+                </div>
+                <div class="w-full sm:w-2/3 xl:w-3/4 mt-8 sm:mt-0 pl-8 text-white text-base">
+                    <ul class="list-disc">
+                        <li id="job1Desc1">Desarrollador Full stack .NET C# para el sistema de reservas online <a class="hover:underline" href="ebooking.com.ar" target="_blank">ebooking.com.ar</a>.</li>
+                        <li id="job1Desc2">Realicé integraciones exitosas entre APIs externas y el sistema de reservas, entre brókers de servicios hoteleros y de asistencias al viajero reconocidas mundialmente.</li>
+                        <li id="job1Desc3">Desarrollo tanto del backend (.NET) como del frontend (AngularJS) para las nuevas integraciones (servicio de asistencia al viajero), y mantenimiento de las ya existentes (servicio de hoteles y administrador de reservas sólo para usuarios de la empresa).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="stackDiv" class="text-gray-400 text-sm uppercase ml-2 mt-16 mb-8">
+                CONOCIMIENTOS
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 items-start gap-4">
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-csharp-plain"></i></div>
+                    <p class="text-gray-500 text-center">C#</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-dotnetcore-plain"></i></div>
+                    <p class="text-gray-500 text-center">.NET Core</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-dotnetcore-plain"></i></div>
+                    <p class="text-gray-500 text-center">ASP.NET MVC / Razor / Blazor</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-visualstudio-plain"></i></div>
+                    <p class="text-gray-500 text-center">Visual Studio</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="fas fa-cogs"></i></div>
+                    <p class="text-gray-500 text-center">REST APIs</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-microsoftsqlserver-plain"></i></div>
+                    <p class="text-gray-500 text-center">SQL Server</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-mongodb-plain"></i></div>
+                    <p class="text-gray-500 text-center">Mongo DB</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-git-plain"></i></div>
+                    <p class="text-gray-500 text-center">Git</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-html5-plain"></i></div>
+                    <p class="text-gray-500 text-center">HTML</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-css3-plain"></i></div>
+                    <p class="text-gray-500 text-center">CSS</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-javascript-plain"></i></div>
+                    <p class="text-gray-500 text-center">Javascript</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-jquery-plain"></i></div>
+                    <p class="text-gray-500 text-center">jQuery</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-angularjs-plain"></i></div>
+                    <p class="text-gray-500 text-center">Angular</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-bootstrap-plain"></i></div>
+                    <p class="text-gray-500 text-center">Bootstrap</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-python-plain"></i></div>
+                    <p class="text-gray-500 text-center">Python</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-flutter-plain"></i></div>
+                    <p class="text-gray-500 text-center">Flutter</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-dart-plain"></i></div>
+                    <p class="text-gray-500 text-center">Dart</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-linux-plain"></i></div>
+                    <p class="text-gray-500 text-center">Linux OS</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="fas fa-terminal"></i></div>
+                    <p class="text-gray-500 text-center">Terminal</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="fas fa-sync-alt"></i></div>
+                    <p class="text-gray-500 text-center">Agile SCRUM</p>
+                </div>
+                <div class="mb-2">
+                    <div class="text-gray-400 text-6xl text-center"><i class="devicon-ionic-original"></i></div>
+                    <p class="text-gray-500 text-center">Ionic</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div id="education" class="py-16">
+            <h3 id="educationTitle" class="text-gray-400 uppercase ml-2">EDUCACIÓN</h3>
+            <div class="bg-indigo-600 w-16 h-2 -mt-2 mb-12"></div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 my-24">
+                <div>
+                    <div id="educationTitle1" class="pl-4 text-center text-white text-xl mb-1">Ingeniero en Sistemas de Información</div>
+                    <div id="educationLocation1" class="pl-4 text-center text-gray-400 text-lg mb-1">Universidad Tecnológica Nacional</div>
+                    <div id="educationPeriod1" class="pl-4 text-center italic text-gray-600 text-base">2017 - Córdoba, Argentina</div>
+                </div>
+                <div>
+                    <div id="educationTitle2" class="pl-4 text-center text-white text-xl mb-1">First Certificate in English</div>
+                    <div id="educationLocation2" class="pl-4 text-center text-gray-400 text-lg mb-1">Cambridge University</div>
+                    <div id="educationPeriod2" class="pl-4 text-center italic text-gray-600 text-base">2019 - Córdoba, Argentina</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="w-full bg-gray-900 py-16">
+        <div id="contactDiv" class="w-full mb-2 text-center text-gray-500 text-xs uppercase">
+            CONTÁCTAME
+        </div>
+        <div class="flex items-center justify-center gap-8">
+            <a class="rounded-full h-16 w-16 flex items-center justify-center bg-gray-700 hover:bg-gray-500 focus:bg-gray-400" href="mailto:adriel.perez993@gmail.com" target="_blank">
+                <span class="text-gray-900 text-3xl"><i class="fas fa-envelope"></i></span>
+            </a>
+            <a class="rounded-full h-16 w-16 flex items-center justify-center bg-gray-700 hover:bg-gray-500 focus:bg-gray-400" href="https://facebook.com" target="_blank">
+                <span class="text-gray-900 text-3xl"><i class="fab fa-facebook-square"></i></span>
+            </a>
+            <a class="rounded-full h-16 w-16 flex items-center justify-center bg-gray-700 hover:bg-gray-500 focus:bg-gray-400" href="https://www.linkedin.com/in/adriel-perez-alegre/" target="_blank">
+                <span class="text-gray-900 text-3xl"><i class="fab fa-linkedin"></i></span>
+            </a>
+        </div>
+        <div id="developedByDiv" class="w-full mt-8 text-center text-gray-500">
+            Diseñado y desarrollado por Adriel Pérez
+        </div>
+        <div class="w-full text-center text-gray-500">
+            &copy; 2021
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
