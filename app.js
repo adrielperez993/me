@@ -66,6 +66,7 @@ function switchLang(lang) {
         educationLnk.innerHTML = 'EDUCACIÓN';
         educationTitle.innerHTML = 'EDUCACIÓN';
         myResumeLnk.innerHTML = 'Descarga mi CV';
+        myResumeLnk.setAttribute('href', './docs/Adriel Perez Alegre - CV.pdf');
 
         hiDiv.innerHTML = 'Hola! Soy <span class="bg-black rounded-lg py-2 px-8 text-white">Adriel<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>';
         ingDiv.innerHTML = 'soy <span id="ingSpan" class="bg-black rounded-lg py-2 px-8 text-white">ingeniero en sistemas<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>';
@@ -104,6 +105,7 @@ function switchLang(lang) {
         educationLnk.innerHTML = 'EDUCATION';
         educationTitle.innerHTML = 'EDUCATION';
         myResumeLnk.innerHTML = 'Download my resume';
+        myResumeLnk.setAttribute('href', './docs/Adriel Perez Alegre - Resume.pdf');
 
         hiDiv.innerHTML = 'Hi there! I am <span class="bg-black rounded-lg py-2 px-8 text-white">Adriel<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>';
         ingDiv.innerHTML = 'I\'m a <span id="ingSpan" class="bg-black rounded-lg py-2 px-8 text-white">software engineer<span class="cursor-animation text-indigo-500 text-6lg">_</span></span>';
